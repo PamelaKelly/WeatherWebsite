@@ -1,0 +1,58 @@
+Project Name: COMP30680 Web Application Development - Assignment 2 JavaScript & JSON
+Author: Pamela Kelly
+Student Number: 16200514
+Language: HTML5, CSS3, JavaScript
+License: GNU
+Contact information: pamela.kelly@ucdconnect.ie
+        
+References:
+>>>Basics & General techniques: W3 Schools
+>>>Checkboxes reference:  http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_checkbox_create
+
+>>>Icons: https://www.reddit.com/r/FreeCodeCamp/comments/4con5s/how_do_i_use_the_icon_given_in_the_open_weather/d1k8dv8/
+
+>>>Adding a marker to the map at Dublin: 
+https://developers.google.com/maps/documentation/javascript/markers
+
+>>>I couldn't get the marker to fully work, however I did work with the Google API. I signed up for an account and got my 
+own API key, created a function to create the map object and defined the styles necessary for it to display properly. 
+I used code from the the following tutorial to do so: 
+
+https://developers.google.com/maps/documentation/javascript/tutorial
+
+>>>Example referenced for pulling information from forms: 
+http://www.w3schools.com/js/tryit.asp?filename=tryjs_form_elements
+
+Notes on Design: 
+I'm not happy with the design and layout of my website. I realised that it was difficult to apply CSS styles after 
+creating the elements through JavaScript - were I to start again I would fully work out my overall design and 
+create the sytles first. 
+
+For this project I focused more on the design of the code than the front end design. I wanted to keep my code as short as possible and neat. So I worked on getting loops to work for the script. 
+
+Notes on Conditionals: 
+
+I kept encountering typerror where response was being returned as undefined. 
+Realised that it was because I was continuing to use response as though it had been successful outside of the conditional. This was throwing an error because if the request was unsuccessful response would still be undefined and I wouldn't be able to use it or any information from it in my function. safer to keep everything in the conditional. 
+
+Requirements: 
+Part 1: 
+Simple Form - See forecaster.html
+Submit Button - See forecaster.html
+
+Part 2: 
+Brief Description - e.g. 'clear sky' plus graphic included for each day selected from drop down menu. 
+
+Minimum and Maximum Temperature display for each day selected. 
+
+Pressure, humidity and wind speed checkboxes included for number of days selected from drop down menu. When checked this box will display the value for that item for that day. 
+These click on and off - using a conditional to check if the checkbox is clicked. 
+
+Part 3: 
+Used the checkboxes here again as I had some issues getting buttons to hide info again after being clicked a second time. 
+Checkboxes work well and detailed info pops up for each day when box is ticked - disappears when box is unticked. 
+To navigate the file I stored the indices for each days 3 hour blocks in arrays, identified the day number - passed it to the detailed function and used it so assign a particular array depending on which checkbox was ticked. 
+My for loop then iterates through this array and uses another variable to select the index of the array for that number iteration. 
+
+Above & Beyond: 
+I went into some detail with the map integration - using my own API key and constructing a funtion that would create the map set to focus on Dublin. 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Weather Forecaster</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" lang ="en">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>Weather Forecaster</h1>
+        <p>This is a forecaster website for Dublin, Ireland. This website will illustrate the use of JavaScript in creating an interactive website while also using JavaScript to parse and manipulate information from multiple JSON files.</p>
+        <div id="map"></div>
+        <div id="description">
+        <form id="frm1" action="forecaster.html">
+                <fieldset>
+                    Number of Days:
+                    <select name = "days">
+                        <option value ="1">1</option>
+                        <option value ="2">2</option>
+                        <option value ="3">3</option>
+                        <option value ="4">4</option>
+                        <option value ="5">5</option>
+                    </select>
+                    <br>
+                    <input type="button" onclick="subClick()" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+        <div id="id01"></div>
+        <div id="detail"></div>
+        <script>
+            var map;
+            function initMap() {
+                map = new google.maps.Map(document.getElementById("map"), {center: {lat: 53.2734, lng: -7.778320310000026}, zoom: 8});
+            }
+        </script>
+        <script type="text/javascript" async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDjQt5kx1esHiRUDGg5rUFVNWGJwlHd8-c&callback=initMap"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

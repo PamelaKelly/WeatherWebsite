@@ -1,0 +1,99 @@
+#detailForecast {
+    margin: auto;
+}
+
+#map {
+    height: 60%;
+    width: 60%;
+    margin-bottom: 20px;
+    margin-left: 12px;
+    float: left;
+}
+ul {
+    list-style-type: none;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+ul li {
+    font-size: 8pt;
+    display: inline-block;
+    width: 15%;
+    margin: 10px;
+    border: 1px solid cadetblue;
+    position: relative;
+}
+
+html, body {
+    height: 100%;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+h1 {
+    background-color: cadetblue;
+    color: white;
+    font-family: "Georgia";
+    font-size: 18pt;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#day {
+    border: 1px solid cadetblue;
+    margin: 10px;
+    position: relative;
+}
+p, #container {
+    color: cadetblue;
+    /*border: 1px solid cadetblue;*/
+    font-family: "Georgia";
+    font-size: 10pt;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+form {
+    color: cadetblue;
+    width: 35%;
+    float: right;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-bottom: 250px;
+}
+
+fieldset {
+    border: 1px solid cadetblue;
+}
+
+input {
+    margin: 5px;
+    background-color: cadetblue;
+    color: white;
+}
+
+option, select {
+    color: cadetblue;
+    border: 1px solid cadetblue;
+}
+
+button {
+    margin: 10px;
+    background-color: cadetblue;
+    color: white;
+}
+
+#pressure {
+    font-size: 12pt;
+    color: cadetblue;
+}
+
+/*#p0, #p1, #p2, #p3, #p4 {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 40px;
+    margin: auto;
+}*/
